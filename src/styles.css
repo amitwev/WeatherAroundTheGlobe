@@ -12,3 +12,11 @@
     font-family: trench100free;
     src: url('./assets/fonts/trench100free.ttf') format("opentype");
 }
+@font-face {
+    font-family: Questrian;
+    src: url('./assets/fonts/Questrian.otf') format("opentype");
+}
+@font-face {
+    font-family: Supercraft;
+    src: url('./assets/fonts/Supercraft.otf') format("opentype");
+}
