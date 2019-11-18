@@ -50,6 +50,21 @@ export class BodyComponent implements OnInit {
         name: "Miami",
         country: "US",
       },
+      {
+        id: 1694008,
+        name: "Republic of the Philippines",
+        country: "PH",
+      },
+      {
+        id: 6425698,
+        name: "Villefranche-sur-Mer",
+        country: "FR",
+      },
+      {
+        id: 3176952,
+        name: "Firenzuola",
+        country: "IT",
+      },
     ]
   }
   //When user select country
