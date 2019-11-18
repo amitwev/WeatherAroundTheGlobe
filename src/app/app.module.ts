@@ -7,15 +7,11 @@ import { NgxLoadingModule } from 'ngx-loading';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/Layout/header/header.component';
-import { WeathersComponent } from './components/weathers/weathers.component';
 import { WeatherComponent } from './components/weather/weather.component';
-import { LoadingComponent } from './components/loading/loading.component';
 import { BodyComponent } from './components/layout/body/body.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { TodayWeatherComponent } from './components/today-weather/today-weather.component';
 import { DividerComponent } from './components/divider/divider.component';
-
-
 
 @NgModule({
   declarations: [
