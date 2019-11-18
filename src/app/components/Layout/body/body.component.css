@@ -1,0 +1,30 @@
+*{
+    width: 1400px;
+    text-align: center;
+    margin:auto;
+    height:750px;
+}
+
+.main{
+    text-align:center;
+}
+.select {
+    height:50px;
+    position: relative;
+    width: 25%;
+    font-size: 22px;
+    padding:0px;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.divider{
+    padding-top:10%;
+}
+.allForecast{
+    margin-top:5%;
+    height:20%;
+}
+.todayWeather{
+    height:14%;
+}

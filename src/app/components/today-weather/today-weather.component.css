@@ -1,0 +1,25 @@
+.today{
+    width: 20%;
+    margin: auto;
+    height: 28%;
+    padding:0px;
+    margin-top: 2%;
+    font-family: trench100free;
+    font-size:1.5em;
+}
+.backgroundImage {
+    border:0.5px dotted grey;
+    background: rgba(222, 222, 222,0.45 );
+    border-radius: 20%;
+   
+}
+.title{
+    padding-top:5%;
+    margin:0px;
+}
+
+h2{
+    padding-top:2%;
+    margin:0px;
+}
+

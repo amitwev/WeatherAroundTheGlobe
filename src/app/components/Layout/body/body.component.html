@@ -1,0 +1,38 @@
+<div>
+    <select class="select" [(ngModel)]="selectedCity" (change)="onSelected()" required>
+        <option value="" disabled selected="selected">Select a City!</option>
+        <option *ngFor="let city of cities"
+                [ngValue]="city.id"
+        >
+            {{city.name}} {{city.country}}
+        </option>
+    </select>
+    <ngx-loading 
+        [show]="isLoading" 
+        [config]="{primaryColour: primaryColour, secondaryColour: secondaryColour, tertiaryColour: primaryColour, backdropBorderRadius: '3px'}"
+        [template]="loadingTemplate">
+    </ngx-loading>
+    <div *ngIf="isDataLoaded">
+        <div class="todayWeather">
+            <app-today-weather
+            [date]="today.date"
+            [minTemp]="today.minTemp"
+            [maxTemp]="today.maxTemp" 
+            [icon]="today.icon"
+            [main]="today.main"
+            [city]="today.city"
+            >
+            </app-today-weather>
+        </div>
+        <div class="allForecast">
+            <app-weather *ngFor="let weather of forecast"
+                [date]="weather.date"
+                [minTemp]="weather.minTemp"
+                [maxTemp]="weather.maxTemp" 
+                [icon]="weather.icon"
+                [main]="weather.main"
+                [timestamp]="weather.timestamp"
+            ></app-weather>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: EvenBadderMofo;
+    src: url('./assets/fonts/EvenBadderMofo.ttf') format("opentype");
+}
+@font-face {
+    font-family: Weather Sunday;
+    src: url('./assets/fonts/Weather Sunday.otf') format("opentype");
+}
+
+@font-face {
+    font-family: trench100free;
+    src: url('./assets/fonts/trench100free.ttf') format("opentype");
+}
