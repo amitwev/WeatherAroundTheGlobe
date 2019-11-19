@@ -24,6 +24,10 @@
 .allForecast{
     margin-top:5%;
     height:20%;
+    /* This is for center - wrapper */
+    position: relative;
+    display: block;
+    text-align: center;
 }
 .todayWeather{
     height:14%;
