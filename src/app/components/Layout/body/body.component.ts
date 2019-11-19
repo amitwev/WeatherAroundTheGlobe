@@ -17,10 +17,12 @@ export class BodyComponent implements OnInit {
   today:Weather;
   isDataLoaded:boolean;
   isLoading:boolean;
+  error:boolean;
 
   constructor(private weatherService:WeatherService) { }
 
   ngOnInit() {
+    this.error = false
     this.forecast = [];
     this.isDataLoaded = false;
     //set the cities array
@@ -65,6 +67,11 @@ export class BodyComponent implements OnInit {
         name: "Firenzuola",
         country: "IT",
       },
+      {
+        id: 111111,
+        name: "This show error",
+        country: "ERR",
+      },
     ]
   }
   //When user select country
@@ -102,6 +109,11 @@ export class BodyComponent implements OnInit {
       }
       this.isDataLoaded = true;
       this.isLoading = false;
+    }
+    ,err => {
+      this.isDataLoaded = false;
+      this.isLoading = false;
+      this.error = true;
     });
   }
 }

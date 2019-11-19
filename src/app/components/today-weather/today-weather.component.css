@@ -1,11 +1,12 @@
 .today{
-    width: 20%;
+    width: 17%;
     margin: auto;
     height: 28%;
     padding:0px;
     margin-top: 2%;
     font-family: trench100free;
     font-size:1.5em;
+    margin-bottom: 2%;
 }
 .backgroundImage {
     border:0.5px dotted grey;

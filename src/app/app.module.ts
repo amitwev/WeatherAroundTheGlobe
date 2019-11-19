@@ -12,6 +12,7 @@ import { BodyComponent } from './components/layout/body/body.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { TodayWeatherComponent } from './components/today-weather/today-weather.component';
 import { DividerComponent } from './components/divider/divider.component';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DividerComponent } from './components/divider/divider.component';
     BodyComponent,
     FooterComponent,
     TodayWeatherComponent,
-    DividerComponent
+    DividerComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
