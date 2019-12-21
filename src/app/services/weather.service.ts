@@ -14,7 +14,7 @@ export class WeatherService {
   weatherUrl:string = 'http://api.openweathermap.org/data/2.5/forecast?id=CITYID&appid=';
   iconUrl:string = 'http://openweathermap.org/img/wn/'
   //Get weather per selected city
-  getWeather(city:number){ 
+  getWeather(city:number){
     const url = `${this.weatherUrl.replace("CITYID", String(city))}${environment.apikey}&units=metric`; 
     return this.http.get<any>(url)
       .pipe(
